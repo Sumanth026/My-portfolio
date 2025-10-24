@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Times New Roman', Times, serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #000;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+}
+h4, h2 {
+  text-align: center;
+}
+
+
+header {
+  background: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+}
+
+.home {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 250px;
+  border-radius: 8px;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hello {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.buttons {
+  margin: 20px 0;
+}
+
+.btn {
+  border: 2px solid #000;
+  padding: 10px 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  color: #000;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.social-icons img {
+  width: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.about, .skills, .projects {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+.about h2, .skills h2, .projects h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+
+.grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 20px;
+  background: #fff;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.description {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.skills-list div {
+  text-align: center;
+  padding: 10px;
+}
+
+.certifications {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.certifications a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.experience-box {
+  border: 1.5px solid gray;
+  border-radius: 20px;
+  padding: 20px 40px;
+  margin: 30px 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* subtle shadow */
+  transition: transform 0.3s ease;
+}
+
+
+.projects-section {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;    /* Center the cards horizontally */
+  align-items: flex-start;    /* Align tops of cards */
+  gap: 20px;                  /* Space between cards */
+  flex-wrap: wrap;            /* Allow cards to wrap on smaller screens */
+}
+
+.project-card {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 2px solid #000;           /* Black border */
+  border-radius: 30px;              /* Rounded corners */
+  background-color: #fff;           /* White background */
+  color: #000;                      /* Black text */
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #000;           /* Black background on hover */
+  color: #fff;                      /* White text on hover */
+}
+
+
+
+
+.btn:hover {
+  background-color: black;
+}
+
+
+.contact {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+  color: #000;
+}
+
+.contact h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: #fff;
+  border-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px 40px;
+  margin: 0 auto 50px auto;
+  max-width: 700px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+.contact-item img {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.footer-nav {
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 180px;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .social-icons img {
+    width: 25px;
+  }
+
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .experience-box {
+    padding: 20px;
+  }
+
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  .contact-box {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  h2, h4 {
+    font-size: 1.6rem;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .intro-text h1.first-name,
+  .intro-text h1.last-name {
+    font-size: 2rem;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
