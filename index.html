@@ -3,152 +3,508 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>sumanth  Portfolio</title>
+  <title>Sumanth B S - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <h1 class="logo">Sumanth B S</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#Projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">Sumanth</span>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <section class="home">
-    <div class="container home-content">
-      <img src="./sumanth.jpeg" alt="sumanth" class="profile-pic" />
-      <div>
-        <p class="hello">Hello, I'm</p>
-        <h2 class="name">Sumanth B S</h2>
-        <div class="buttons">
-          <a href="https://drive.google.com/file/d/1-Qzh711gexPx-7jFLYJoJo3dJusMmSxT/view?usp=drivesdk" class="btn">Download CV</a>
-          <a href="#contact" class="btn">Contact Info</a>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-background">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+      </div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="greeting">Hello, I'm</span>
+          <h1 class="hero-name">
+            <span class="name-line">Sumanth</span>
+            <span class="name-line">B S</span>
+          </h1>
+          <div class="hero-title">
+            <span class="title-text">Full Stack Developer</span>
+            <span class="title-cursor">|</span>
+          </div>
+          <p class="hero-description">
+            Passionate about creating innovative solutions and bringing ideas to life through code. 
+            I specialize in modern web technologies and love building user-centric applications.
+          </p>
+          <div class="hero-buttons">
+            <a href="https://drive.google.com/file/d/1-Qzh711gexPx-7jFLYJoJo3dJusMmSxT/view?usp=drivesdk" class="btn btn-primary">
+              <i class="fas fa-download"></i>
+              Download CV
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-envelope"></i>
+              Get In Touch
+            </a>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/sumanthbs062026" class="social-link" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Sumanth026" class="social-link" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:sumanthbs2004@gmail.com" class="social-link">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
         </div>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/sumanthbs062026"><img src="./LinkedIn_logo_initials.png.webp" alt="LinkedIn"></a>
-          <a href="https://github.com/Sumanth026"><img src="./GitHub-Mark-ea2971cee799.png" alt="GitHub"></a>
+        <div class="hero-image">
+          <div class="image-container">
+            <img src="./sumanth.jpeg" alt="Sumanth B S" class="profile-image" />
+            <div class="image-overlay"></div>
+            <div class="floating-elements">
+              <div class="floating-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="floating-icon">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="floating-icon">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <div class="floating-icon">
+                <i class="fab fa-python"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- About Section -->
   <section id="about" class="about">
     <div class="container">
-      <h2>About Me</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>🎓 Education</h3>
-          <p><strong>Bachelor Of Engineering</strong><br>
-          computer Science and Engineering<br>
-          CAUVERY INSTITUTE OF TECHNOLOGY<br>📍Mandya</p>
-          <p><strong>Pre-University College</strong><br>
-          PCM - With Biology<br>
-          Sadvidya pu college<br>📍Mandya</p>
+      <div class="section-header">
+        <span class="section-subtitle">Get to know me</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <div class="about-description">
+            <p>
+              I'm a passionate Computer Science Engineering student with a strong foundation in 
+              modern web technologies and a keen interest in AI and DevOps. Currently pursuing my 
+              Bachelor's degree at Cauvery Institute of Technology, I've gained hands-on experience 
+              in full-stack development and cloud technologies.
+            </p>
+            <p>
+              My journey in technology started with a curiosity for problem-solving and has evolved 
+              into a passion for creating innovative solutions. I believe in continuous learning and 
+              staying updated with the latest technologies to build impactful applications.
+            </p>
+          </div>
+          
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">2+</div>
+              <div class="stat-label">Years Learning</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Technologies</div>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <h3>💼 Experience</h3>
-          <p><strong>Fresher</strong></p>
-          <p><strong>AI and Devops Intern</strong><br>
-          Rooman Technologies,<br>
-           Designed and implemented CI/CD pipelines using Git, Jenkins, Docker, and Gitlab for seamless 
-           deployment on IBM Cloud.</p>
+        
+        <div class="about-cards">
+          <div class="about-card">
+            <div class="card-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Education</h3>
+            <div class="card-content">
+              <div class="education-item">
+                <h4>Bachelor of Engineering</h4>
+                <p>Computer Science and Engineering</p>
+                <span class="institution">Cauvery Institute of Technology</span>
+                <span class="location">📍 Mandya</span>
+              </div>
+              <div class="education-item">
+                <h4>Pre-University College</h4>
+                <p>PCM - With Biology</p>
+                <span class="institution">Sadvidya PU College</span>
+                <span class="location">📍 Mandya</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-card">
+            <div class="card-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3>Experience</h3>
+            <div class="card-content">
+              <div class="experience-item">
+                <h4>AI and DevOps Intern</h4>
+                <span class="company">Rooman Technologies</span>
+                <p>Designed and implemented CI/CD pipelines using Git, Jenkins, Docker, and GitLab for seamless deployment on IBM Cloud.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <p class="description">
-                An engineering student eager to apply theoretical knowledge to real-world projects.
-          Passionate about solving complex problems and contributing to innovation.
-          Proficient in using technical tools and learning new technologies quickly.
-          Effective communicator and team player with a strong work ethic.
-          Seeking hands-on experience and mentorship to enhance professional growth.
-
-
-      </p>
     </div>
   </section>
 
- <section id="experience" class="skills">
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
   <div class="container">
-  <h4>Explore My</h4>
-<h2><strong>Experience</strong></h2>
-    <div class="experience-box"> 
-      <h3>Frontend Development </h3>
-     <div class="skills-list">
-  <div><p><span class="check-icon">✔</span> <strong>HTML</strong><br>Experienced</p></div>
-  <div><p><span class="check-icon">✔</span> <strong>CSS</strong><br>Experienced</p></div>
-  <div><p><span class="check-icon">✔</span> <strong>JavaScript</strong><br>Experienced</p></div>
-
+      <div class="section-header">
+        <span class="section-subtitle">What I can do</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="section-line"></div>
+      </div>
+      
+      <div class="skills-content">
+        <div class="skills-categories">
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-code"></i>
+              <h3>Frontend Development</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-server"></i>
+              <h3>Backend & Database</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Oracle SQL</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-chart-bar"></i>
+              <h3>Data & Analytics</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Data Analytics</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Power BI</span>
+                  <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
 </div>
-      <div class="certifications">
-        <h3>Certification</h3>
-        <p><a href="https://drive.google.com/file/d/1vg8LpETFMivJzN16NOk23eMaJMbb9nW4/view?usp=drivesdk">AI and Devops Intern Certificate &gt; CLICK HERE</a></p>
         
-      </div>
+        <div class="certifications-section">
+          <h3>Certifications</h3>
+          <div class="certification-card">
+            <div class="cert-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <div class="cert-content">
+              <h4>AI and DevOps Intern Certificate</h4>
+              <p>Rooman Technologies</p>
+              <a href="https://drive.google.com/file/d/1vg8LpETFMivJzN16NOk23eMaJMbb9nW4/view?usp=drivesdk" class="cert-link" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                View Certificate
+              </a>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
 </section>
 
-<section id="Projects" class="Projects">
-  <div class="container">
-  <h4>Browse my recent</h4>
-  <h2>Projects</h2>
-  <div class="projects-container">
-    <div class="project-card">
-      <img src="./A-view-of-traffic-signal-at-Janpath-Road-crossing-_1726483953445.avif" alt="Gesture" />
-      <h3>Project One<br>Gesture AI BASED TRAFFIC FLOW OPTIMIZATION SYSTEM</h3>
-      <div class="buttons">
-        <a href="https://github.com/Sumanth026/AI-TRAFFIC-CONTROL.git" class="btn">GitHub</a>
-        <a href="./VID_20250927_142550589.mp4" class="btn">LiveDemo</a>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">My recent work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./A-view-of-traffic-signal-at-Janpath-Road-crossing-_1726483953445.avif" alt="AI Traffic Control System" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Sumanth026/AI-TRAFFIC-CONTROL.git" class="project-link" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="./VID_20250927_142550589.mp4" class="project-link" target="_blank">
+                  <i class="fas fa-play"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tech">
+              <span class="tech-tag">AI</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Computer Vision</span>
+            </div>
+            <h3 class="project-title">AI-Based Traffic Flow Optimization</h3>
+            <p class="project-description">
+              An intelligent traffic management system that uses gesture recognition and AI algorithms 
+              to optimize traffic flow at intersections, reducing congestion and improving efficiency.
+            </p>
+            <div class="project-buttons">
+              <a href="https://github.com/Sumanth026/AI-TRAFFIC-CONTROL.git" class="btn btn-outline" target="_blank">
+                <i class="fab fa-github"></i>
+                View Code
+              </a>
+              <a href="./VID_20250927_142550589.mp4" class="btn btn-primary" target="_blank">
+                <i class="fas fa-play"></i>
+                Watch Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./download.jpg" alt="Stopwatch Application" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Sumanth026/stop-watch.git" class="project-link" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://sumanth026.github.io/stop-watch/" class="project-link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <h3 class="project-title">Interactive Stopwatch</h3>
+            <p class="project-description">
+              A responsive web-based stopwatch application with modern UI design, featuring 
+              start, stop, reset functionality and precise time tracking capabilities.
+            </p>
+            <div class="project-buttons">
+              <a href="https://github.com/Sumanth026/stop-watch.git" class="btn btn-outline" target="_blank">
+                <i class="fab fa-github"></i>
+                View Code
+              </a>
+              <a href="https://sumanth026.github.io/stop-watch/" class="btn btn-primary" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="project-card">
-      <img src="./download.jpg" alt="stop-watch" />
-      <h3>Project Two<br>STOP WATCH</h3>
-      <div class="buttons">
-        <a href="https://github.com/Sumanth026/stop-watch.git" class="btn">GitHub</a>
-        <a href="https://sumanth026.github.io/stop-watch/" class="btn">LiveDemo</a>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Get in touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <div class="section-line"></div>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p>sumanthbs2004@gmail.com</p>
+              <a href="mailto:sumanthbs2004@gmail.com" class="contact-link">Send Email</a>
+            </div>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="contact-details">
+              <h3>LinkedIn</h3>
+              <p>Connect with me</p>
+              <a href="https://www.linkedin.com/in/sumanthbs062026" class="contact-link" target="_blank">View Profile</a>
+            </div>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-details">
+              <h3>GitHub</h3>
+              <p>Check out my code</p>
+              <a href="https://github.com/Sumanth026" class="contact-link" target="_blank">View Repositories</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-</section>
-
-
-
-<!-- Contact Section -->
-<section class="contact" id="contact">
-  <h2>Contact Me</h2>
-  <div class="contact-box">
-    <a href="mailto:sumanthbs2004@gmail.com" class="contact-item">
-      <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Gmail Icon">
-      <span>sumanthbs2004@gmail.com</span>
-    </a>
-
-    <a href="https://www.linkedin.com/in/sumanthbs062026" class="contact-item" target="_blank">
-      <img src="./LinkedIn_logo_initials.png.webp" alt="LinkedIn Icon">
-      <span>LinkedIn</span>
-    </a>
-  </div>
-
-  <div class="footer-nav">
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#Projects">Projects</a>
-    <a href="#contact ">Contact</a>
-  </div>
-
-  <p class="copyright">
-    Copyright ©2025 @Sumanth. All Rights Reserved.
-  </p>
-</section>
-</section>
-
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-text">Sumanth</span>
+        </div>
+        <div class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/sumanthbs062026" class="social-link" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Sumanth026" class="social-link" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:sumanthbs2004@gmail.com" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sumanth B S. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="app.js"></script>
 </body>
 </html>
